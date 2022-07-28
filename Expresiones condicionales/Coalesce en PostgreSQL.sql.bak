@@ -1,0 +1,8 @@
+Select 
+prestamo_id,
+libro_id,
+/*mora*/
+coalesce(mora,0)/*evalua de izquierda a drecha*/
+from prestamo_detalle
+
+select coalesce (null,45,26)
